@@ -17,7 +17,7 @@ function setPrices(holdings, callback) {
             callback(fixed);
         }
     };
-    xhr.open("GET", "https://api.coinmarketcap.com/v1/ticker/")
+    xhr.open("GET", "https://api.coinmarketcap.com/v1/ticker/?limit=0")
     xhr.send();
 }
 
